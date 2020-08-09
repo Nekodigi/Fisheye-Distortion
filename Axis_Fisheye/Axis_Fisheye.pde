@@ -6,7 +6,6 @@ float gridS = 50;//grid size
 void setup(){
   size(500, 500);
   fisheye = new Fisheye(2);
-  fisheye.focus = width/2;
 }
 
 void draw(){
