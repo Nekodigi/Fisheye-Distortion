@@ -11,8 +11,8 @@ void setup(){
   size(500, 500, P3D);
   fisheye = new Fisheye(200, 2);
   img = loadImage("FevCat.png");
-  img.resize(200, 200);//reduce resolution for high speed processing
-  meshDeform = new MeshDeform(img, new PVector(0, 0), new PVector(width, height));
+  img.resize(400, 400);//reduce resolution for high speed processing
+  meshDeform = new MeshDeform(img, new PVector((width-height)/2, 0), new PVector(width-(width-height)/2, height));
   
 }
 

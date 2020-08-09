@@ -16,8 +16,8 @@ class MeshDeform{
     ctrUV = new PVector[img.width][img.height];
     for(int i=0; i<img.width; i++){
       for(int j=0; j<img.width; j++){
-        float x = map(i, 0, img.width-1, 0, br.x-tl.x);
-        float y = map(j, 0, img.height-1, 0, br.y-tl.y);
+        float x = map(i, 0, img.width-1, tl.x, br.x);
+        float y = map(j, 0, img.height-1, tl.y, br.y);
         float u = map(i, 0, img.width-1, 0, 1);
         float v = map(j, 0, img.height-1, 0, 1);
         ctrPoss[i][j] = new PVector(x, y);
